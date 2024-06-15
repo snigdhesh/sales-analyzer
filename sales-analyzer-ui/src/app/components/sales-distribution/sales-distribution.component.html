@@ -1,0 +1,5 @@
+<div style="margin: 5%;">
+    <h1 class="mat-display-1">Sales distribution for {{displayLimit}} products</h1>
+    <span *ngIf="!salesDistributionChart"><h1 class="mat-display-1">Loading ..</h1></span>
+    <canvas id="sales-distribution-chart">{{ salesDistributionChart }}</canvas>
+</div>

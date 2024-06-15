@@ -1,0 +1,34 @@
+<div class="container">
+    <mat-card appearance="raised">
+
+        <mat-card-header>
+            <h1>Sales Analyzer</h1>
+        </mat-card-header>
+
+        <mat-card-content>
+            <main class="main-content">
+                <section class="overview">
+                    <p>Welcome to the Sales Analyzer Dashboard. Here you can track and analyze your sales data to gain
+                        valuable insights into your business performance. Use the navigation menu to explore different
+                        sections of the dashboard.</p>
+                    <p>Total sales, Top product, sales trends, sales distributions.</p>
+                </section>
+                <section>
+                   <h1 *ngIf="totalSales">Total sales: $ {{totalSales}}</h1>
+                   <h1 *ngIf="topProduct">Top product: {{topProduct}}</h1>
+                </section>
+                <section>
+                    <p>Used following technologies, charts and graphs below to bring sales data monitoring live.</p>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Angular Routing</li>
+                        <li>Angular Material</li>
+                        <li>chart.js</li>
+                    </ul>
+                </section>
+            </main>
+
+        </mat-card-content>
+
+    </mat-card>
+</div>
