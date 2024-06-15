@@ -16,7 +16,7 @@ public class SalesService {
 
     public List<SalesDetail> getMonthlySales() throws IOException {
         List<SalesDetail> salesDetails = new ArrayList<>();
-        csvService.readFromCSV("monthlySalesTrend.csv").stream().forEach(row -> salesDetails.add(new SalesDetail(row.get("SaleDate"), Double.parseDouble(row.get("SalesAmt")), "", 0)));
+        csvService.readFromCSV("monthlySalesTrend.csv").stream().forEach(row -> salesDetails.add(new SalesDetail(row.get("SaleDate"), Double.parseDouble(row.get("SalesAmt")), null, 0)));
         return salesDetails;
     }
 
